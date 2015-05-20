@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>transitionjs</title>
+    <title>goku.js</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="/bower_components/prism/themes/prism.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -16,13 +18,107 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-  </head>
-  <body>
+</head>
+<body data-page="basics">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <button id="play">play</button>
+    <header>
+        <h1>goku.js - beta</h1>
+        <nav>
+            <h1 style="display: none;">Site Links</h1>
+            <ul class="site-nav">
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#advance">Advance</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="basics">
+        <h1 style="display: none;">Basics</h1>
+        <section id="animate">
+            <h1>animate()</h1>
+<pre><code class="language-javascript">
+goku('element').animate({
+    transform: 'translate(50rem, 0)'
+});
+</code></pre>
+        </section>
+
+        <section id="pause-play">
+            <h1>pause() & play()</h1>
+<pre><code class="language-javascript">
+goku('element').pause();
+goku('element').play();
+</code></pre>
+        </section>
+
+        <section id="speed">
+            <h1>speed()</h1>
+<pre><code class="language-javascript">
+goku('element').speed(4);
+</code></pre>
+<pre><code class="language-javascript">
+goku('element').speed(0.5);
+</code></pre>
+        </section>
+
+        <section id="delay">
+            <h1>delay()</h1>
+<pre><code class="language-javascript">
+goku('element').delay(400);
+</code></pre>
+        </section>
+
+        <section id="stop">
+            <h1>stop()</h1>
+<pre><code class="language-javascript">
+goku('element').stop();
+</code></pre>
+        </section>
+
+        <section id="finish">
+            <h1>finish()</h1>
+<pre><code class="language-javascript">
+goku('element').finish();
+</code></pre>
+        </section>
+
+        <section id="reverse">
+            <h1>reverse() - TBD</h1>
+<pre><code class="language-javascript">
+goku('element').reverse();
+</code></pre>
+        </section>
+
+        <section id="reset">
+            <h1>reset()</h1>
+<pre><code class="language-javascript">
+goku('element').reset();
+</code></pre>
+        </section>
+    </article>
+
+    <article id="advance">
+        <h1>Advance - TBD</h1>
+    </article>
+
+    <article id="effects">
+        <h1>Effects - TBD</h1>
+    </article>
+
+    <article id="getting-started">
+        <h1>Getting Started - TBD</h1>
+    </article>
+
+    <footer>
+        <h1>Made by seiyugi</h1>
+    </footer>
+
+<!--     <button id="play">play</button>
     <button id="pause-a">pause blue</button>
     <button id="pause-b">pause red</button>
     <button id="fast-forward">fast forward</button>
@@ -33,17 +129,18 @@
     <div id="elem-a">
     </div>
     <div id="elem-b">
-    </div>
+    </div> -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/prism/prism.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/goku.min.js -->
-        <script src="goku.js"></script>
-        <script src="transition.js"></script>
-        <!-- endbuild -->
-        <script src="scripts/main.js"></script>
+    <!-- build:js scripts/goku.min.js -->
+    <script src="goku.js"></script>
+    <script src="transition.js"></script>
+    <!-- endbuild -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>

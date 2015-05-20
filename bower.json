@@ -11,5 +11,8 @@
     "src",
     "gulpfile.js",
     "package.json"
-  ]
+  ],
+  "dependencies": {
+    "prism": "*"
+  }
 }

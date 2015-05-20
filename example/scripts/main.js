@@ -5,6 +5,10 @@
 
   'use strict';
 
+  window.addEventListener('hashchange', function () {
+    document.body.dataset.page = window.location.hash.substr(1);
+  });
+
   var playButton = document.getElementById('play');
   var pauseAButton = document.getElementById('pause-a');
   var pauseBButton = document.getElementById('pause-b');
