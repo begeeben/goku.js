@@ -16,19 +16,21 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
     <!-- endbuild -->
 
 </head>
-<body data-page="basics">
+<body data-page="home">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <header>
-        <h1>goku.js - beta</h1>
+        <h1><a href="/">goku.js - beta</a></h1>
         <nav>
             <h1 style="display: none;">Site Links</h1>
             <ul class="site-nav">
+                <li><a href="/">Home</a></li>
                 <li><a href="#basics">Basics</a></li>
                 <li><a href="#advance">Advance</a></li>
                 <li><a href="#effects">Effects</a></li>
@@ -36,6 +38,28 @@
             </ul>
         </nav>
     </header>
+
+    <article id="home">
+        <h1>Introduction</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <section id="bubbles">
+            <h1>bubbles</h1>
+            <button id="show-bubbles">show</button>
+            <div id="bubble-0" class='bubble'></div>
+            <div id="bubble-1" class='bubble'></div>
+            <div id="bubble-2" class='bubble'></div>
+            <div id="bubble-3" class='bubble'></div>
+        </section>
+
+        <section id="swapping">
+            <h1>swapping</h1>
+            <div id="swap-0"></div>
+            <div id="swap-1"></div>
+            <div id="swap-2"></div>
+            <div id="swap-3"></div>
+        </section>
+    </article>
 
     <article id="basics">
         <h1 style="display: none;">Basics</h1>
@@ -142,5 +166,6 @@ goku('element').reset();
     <script src="transition.js"></script>
     <!-- endbuild -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>

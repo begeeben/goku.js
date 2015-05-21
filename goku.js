@@ -540,7 +540,9 @@
      */
     _reset: function () {
       for (var i = 0; i < this.queue.length; i++) {
-        this.queue[i].options.duration = this.originalTimings[i];
+        if (this.queue[i].options) {
+          this.queue[i].options.duration = this.originalTimings[i];
+        }
         this.timings[i] = this.originalTimings[i];
       }
     },

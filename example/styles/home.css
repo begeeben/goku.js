@@ -1,0 +1,17 @@
+#bubbles {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#bubbles > h1 {
+	width: 100%;
+}
+
+.bubble {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 5rem;
+	background-color: blue;
+	transform: translateY(5rem);
+	opacity: 0;
+}

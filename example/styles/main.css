@@ -42,6 +42,7 @@ body > article {
   display: none;
 }
 
+body[data-page="home"] #home,
 body[data-page="basics"] #basics,
 body[data-page="advance"] #advance,
 body[data-page="effects"] #effects,
