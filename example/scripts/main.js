@@ -1,5 +1,4 @@
 /* jshint devel:true */
-/* global goku */
 
 (function () {
 

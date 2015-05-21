@@ -1,4 +1,6 @@
-(function (window) {
+/* global goku */
+
+(function () {
   'use strict';
 
   var bubbleButton = document.getElementById('show-bubbles');
