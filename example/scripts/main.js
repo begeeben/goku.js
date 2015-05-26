@@ -4,6 +4,8 @@
 
   'use strict';
 
+  document.body.dataset.page = window.location.hash.substr(1) || 'home';
+
   window.addEventListener('hashchange', function () {
     document.body.dataset.page = window.location.hash.substr(1);
   });

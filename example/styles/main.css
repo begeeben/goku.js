@@ -47,11 +47,19 @@ body[data-page="basics"] #basics,
 body[data-page="advance"] #advance,
 body[data-page="effects"] #effects,
 body[data-page="getting-started"] #getting-started {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 article > h1 {
   font-size: 3rem;
+}
+
+article > section {
+  max-width: 60rem;
+  min-width: 45rem;
+  width: 47%;
 }
 
 footer {

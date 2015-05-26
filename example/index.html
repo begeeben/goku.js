@@ -7,9 +7,11 @@
     <title>goku.js</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="/bower_components/prism/themes/prism.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -17,6 +19,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/basics.css">
     <!-- endbuild -->
 
 </head>
@@ -63,8 +66,10 @@
 
     <article id="basics">
         <h1 style="display: none;">Basics</h1>
+
         <section id="animate">
             <h1>animate()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').animate({
     transform: 'translate(50rem, 0)'
@@ -74,6 +79,7 @@ goku('element').animate({
 
         <section id="pause-play">
             <h1>pause() & play()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').pause();
 goku('element').play();
@@ -82,6 +88,7 @@ goku('element').play();
 
         <section id="speed">
             <h1>speed()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').speed(4);
 </code></pre>
@@ -92,6 +99,7 @@ goku('element').speed(0.5);
 
         <section id="delay">
             <h1>delay()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').delay(400);
 </code></pre>
@@ -99,6 +107,7 @@ goku('element').delay(400);
 
         <section id="stop">
             <h1>stop()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').stop();
 </code></pre>
@@ -106,6 +115,7 @@ goku('element').stop();
 
         <section id="finish">
             <h1>finish()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').finish();
 </code></pre>
@@ -113,6 +123,7 @@ goku('element').finish();
 
         <section id="reverse">
             <h1>reverse() - TBD</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').reverse();
 </code></pre>
@@ -120,6 +131,7 @@ goku('element').reverse();
 
         <section id="reset">
             <h1>reset()</h1>
+            <div class="ball"></div>
 <pre><code class="language-javascript">
 goku('element').reset();
 </code></pre>
@@ -127,7 +139,27 @@ goku('element').reset();
     </article>
 
     <article id="advance">
-        <h1>Advance - TBD</h1>
+        <h1 style="display: none;">Advance - TBD</h1>
+
+        <section id="then">
+            <h1>then()</h1>
+            <div class="ball"></div>
+<pre><code class="language-javascript">
+goku('element').then({
+    transform: 'translate(50rem, 0)'
+});
+</code></pre>
+        </section>
+
+        <section id="promise">
+            <h1>ES6 Promise</h1>
+            <div class="ball"></div>
+<pre><code class="language-javascript">
+goku('element').animate({
+    transform: 'translate(50rem, 0)'
+});
+</code></pre>
+        </section>
     </article>
 
     <article id="effects">
@@ -167,5 +199,6 @@ goku('element').reset();
     <!-- endbuild -->
     <script src="scripts/main.js"></script>
     <script src="scripts/home.js"></script>
+    <script src="scripts/basics.js"></script>
 </body>
 </html>
